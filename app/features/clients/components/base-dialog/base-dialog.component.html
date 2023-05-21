@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>{{header}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form" class="form-group">
+    <div>
+      <label>Name</label>
+      <input type="text" formControlName="name">
+    </div>
+    <div>
+      <label>Surname</label>
+      <input type="text" formControlName="surname">
+    </div>
+    <div>
+      <label>Age</label>
+      <input type="number" formControlName="age">
+    </div>
+    <div formGroupName="address">
+      <div>
+        <label>Street</label>
+        <input type="text" formControlName="street">
+      </div>
+      <div>
+        <label>City</label>
+        <input type="text" formControlName="city">
+      </div>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="addClient()">{{label}}</button>
+  <button mat-button (click)="reset()">Reset</button>
+  <button mat-button [mat-dialog-close]="">Cancel</button>
+</div>
