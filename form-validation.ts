@@ -76,3 +76,13 @@ export const validationMessage = {
   matchPassword: 'Podane hasła się różnią.',
 
 };
+
+<!--
+ <div class="control">
+    <label for="type">Typ</label>
+    <pf-select [items]="dietTypes" formControlName="type" labelId="type" [searchable]="false"></pf-select>
+    <div class="control-error" *ngIf="type?.dirty && type?.errors?.required || type?.errors?.requiredServerError">{{msg.required}}</div>
+    <div class="control-error" *ngIf="type?.dirty && type?.errors?.pattern || type?.errors?.regexpServerError">{{msg.incorrect}}</div>
+  </div>
+
+-->
