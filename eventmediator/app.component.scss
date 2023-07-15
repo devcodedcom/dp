@@ -1,0 +1,15 @@
+.navi {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  display: flex;
+
+  li {
+    padding: 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}

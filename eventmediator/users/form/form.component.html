@@ -1,0 +1,21 @@
+<form [formGroup]="form">
+  <div class="form-field">
+    <label>Name</label>
+    <input type="text" formControlName="name">
+  </div>
+  <div class="form-field">
+    <label>Description</label>
+    <input type="text" formControlName="description">
+  </div>
+  <div class="form-field">
+    <label>Option</label>
+    <select formControlName="person">
+      <option value="1">Lukasz</option>
+      <option value="2">Pati</option>
+      <option value="3">Kate</option>
+      <option value="4">Tiger</option>
+    </select>
+  </div>
+
+  <button (click)="onClick()">Save</button>
+</form>
